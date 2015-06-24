@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">VideoclubClient</string>
+    <string name="clientes">Clientes</string>
+    <string name="titulos">Titulos</string>
+    <string name="rentas">Rentas</string>
+    <string name="devoluciones">Devoluciones</string>
+    <string name="openDrawer">Open Drawer</string>
+    <string name="closeDrawer">Close Drawer</string>
+</resources>
