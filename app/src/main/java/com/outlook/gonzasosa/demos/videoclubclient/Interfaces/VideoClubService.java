@@ -37,25 +37,25 @@ public interface VideoClubService {
     void getTitulo (@Path ("id") int id, Callback<Cliente> cb);
 
     @POST ("/titulos")
-    void saveTitulo (@Body Cliente cliente, Callback<Cliente> cb);
+    void saveTitulo (@Body Titulo titulo, Callback<Titulo> cb);
 
     @PUT ("/titulos/{id}")
-    void updateTitulo (@Path ("id") int id, @Body Cliente cliente, Callback cb);
+    void updateTitulo (@Path ("id") int id, @Body Titulo titulo, Callback cb);
 
     @DELETE ("/titulos/{id}")
     void deleteTitulo (@Path ("id") int id, Callback cb);
 
     @GET ("/rentas")
-    List<Cliente> getRentas (Callback cb);
+    List<Renta> getRentas (Callback<List<Renta>> cb);
 
     @GET ("/rentas/{id}")
-    void getRenta (@Path ("id")  int id, Callback<Cliente> cb);
+    void getRenta (@Path ("id")  int id, Callback<Renta> cb);
 
     @POST ("/rentas")
-    void saveRenta (@Body Renta renta, Callback cb);
+    void saveRenta (@Body Renta renta, Callback<Titulo> cb);
 
     @PUT ("/rentas/{id}")
-    void updateRenta (@Path ("id") int id, @Body Cliente cliente, Callback cb);
+    void updateRenta (@Path ("id") int id, @Body Renta renta, Callback cb);
 
     @DELETE ("/clientes/{id}")
     void deleteRenta (@Path("id") int id, Callback cb);

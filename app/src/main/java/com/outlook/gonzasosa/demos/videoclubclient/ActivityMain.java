@@ -12,7 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
-import com.outlook.gonzasosa.demos.videoclubclient.Fragments.FragmentClientes;
+import com.outlook.gonzasosa.demos.videoclubclient.Fragments.ClientesNuevoFragment;
 import com.outlook.gonzasosa.demos.videoclubclient.Fragments.FragmentDevoluciones;
 import com.outlook.gonzasosa.demos.videoclubclient.Fragments.FragmentRentas;
 import com.outlook.gonzasosa.demos.videoclubclient.Fragments.FragmentTitulos;
@@ -83,7 +83,7 @@ public class ActivityMain extends AppCompatActivity {
 
             switch (i) {
                 case 0:
-                    fragment = new FragmentClientes();
+                    fragment = new ClientesNuevoFragment();
                     break;
                 case 1:
                     fragment = new FragmentTitulos();

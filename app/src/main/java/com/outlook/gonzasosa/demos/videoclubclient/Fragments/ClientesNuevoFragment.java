@@ -21,12 +21,12 @@ import retrofit.Callback;
 import retrofit.RetrofitError;
 import retrofit.client.Response;
 
-public class FragmentClientes extends Fragment {
-    public FragmentClientes () {}
+public class ClientesNuevoFragment extends Fragment {
+    public ClientesNuevoFragment() {}
 
     @Override
     public View onCreateView (LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        return inflater.inflate (R.layout.clientes_fragment, container, false);
+        return inflater.inflate (R.layout.clientes_nuevo_fragment, container, false);
     }
 
     @Override
