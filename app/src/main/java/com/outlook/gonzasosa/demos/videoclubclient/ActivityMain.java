@@ -17,10 +17,13 @@ import com.outlook.gonzasosa.demos.videoclubclient.Fragments.FragmentDevolucione
 import com.outlook.gonzasosa.demos.videoclubclient.Fragments.FragmentRentas;
 import com.outlook.gonzasosa.demos.videoclubclient.Fragments.FragmentTitulos;
 
+import butterknife.Bind;
+import butterknife.ButterKnife;
+
 public class ActivityMain extends AppCompatActivity {
-    Toolbar toolbar;
-    ScrimInsetsFrameLayout scrimInsetsFrameLayout;
-    DrawerLayout drawerLayout;
+    @Bind (R.id.appBar) Toolbar toolbar;
+    @Bind (R.id.scrimInsetsFrameLayout) ScrimInsetsFrameLayout scrimInsetsFrameLayout;
+    @Bind (R.id.drawerLayout) DrawerLayout drawerLayout;
     ActionBarDrawerToggle drawerToggle;
     ListView listView;
     final String [] opciones = new String [] {"Clientes", "Títulos", "Rentas", "Devoluciones"};
@@ -30,12 +33,10 @@ public class ActivityMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.main_activity);
+        ButterKnife.bind (this);
 
-        scrimInsetsFrameLayout = (ScrimInsetsFrameLayout) findViewById (R.id.scrimInsetsFrameLayout);
-        toolbar = (Toolbar) findViewById (R.id.appBar);
         setSupportActionBar (toolbar);
 
-        drawerLayout = (DrawerLayout) findViewById (R.id.drawerLayout);
         drawerLayout.setStatusBarBackgroundColor (
                 getResources().getColor (R.color.color_primary_dark)
         );
